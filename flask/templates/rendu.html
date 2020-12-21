@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Rendu</title>
+</head>
+<body>
+	<div class="bg-image"></div>
+
+		<div class="bg-text">
+			 
+			<h1 class="centre">My new picture!</h1>
+			<h6 class="centre">Time of execution: {{ value }}<h6>
+			<h4 style="color:red">{{ x }}</h4>
+			<h4 style="color:red">{{ text }}</h4>
+			
+			<p class="centre">Vous pouvez téléchargez l'image si elle vous plaît!</p>
+			<p class="centre">Ou relancez le modèle pour le thème {{ choix }}:</p>
+			
+			<div class="centre">
+				<form action="/handleTheme" method="post">
+					<input type="hidden" name="themeChoix" value="{{ choix }}"/>
+					<input class="inputClass" type="submit" value="Relancez"/>
+				</form>
+			</div>
+			
+			<div class="renduDiv">
+				<a href="{{ image_color }}" download>
+					<img class="imgClass" src="{{ image_color }}" alt="Image couleur">
+				</a>
+			</div>
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>

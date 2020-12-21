@@ -1,0 +1,165 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("patchwork-walls-domino-2.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: repeat;
+  /*background-size: cover;*/
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+.centre {
+	text-align: center;
+}
+
+#bloc-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+   color: #4d030399;
+}
+
+input {
+    background-color: #4d030331;
+    border-radius: 10px;
+}
+input:hover {
+    cursor: pointer;
+}
+
+#start{
+  margin-top: 3rem;
+}
+.inputClass {
+	color: white;
+	background-color: blue;
+}
+.renduTitre {
+  /*position: relative;*/
+  margin-top: 5px;
+  text-align: center;
+  vertical-align: middle;
+  height: 25px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(gray, blue);
+}
+.divTitre {
+    display: flex;
+    flex-direction: column;
+    align-item: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.renduDiv {
+   height: 500px;
+   width: 500px;
+   text-align: center;
+   background-color: #36DEE9;
+   margin: 1px auto;
+   border-radius: 10px;
+}
+.imgClass {
+    position: relative;
+    margin: 100px auto;
+	width: 350px;
+	height: 350px;
+}
+.leftBoard {
+    float: left;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: -20px;
+    background-image: linear-gradient(blue,gray);
+    width: 20%;
+    height: 600px;
+}
+
+.rightBoard {
+    float: right;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: -460px;
+    margin-left: 80%;
+    background-image: linear-gradient(blue, gray);
+    width: 20%;
+    height: 600px;
+}
+/**************Rendu********/
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("patchwork-walls-domino-2.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}

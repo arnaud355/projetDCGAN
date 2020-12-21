@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Accueil</title>
+</head>
+<body>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Create a new picture by Gan model from theme </h1>
+    
+	<form action="/handleTheme" method="post">
+            <label style="font-size:20px" for="theme-select">Choose a theme:</label>
+
+			<select name="themeChoix" id="picture-select">
+				<option value="">Quelle inspiration pour votre image ?</option>
+				<option value="cartoon">Cartoon</option>
+				<option value="videogaming">Video gaming</option>
+				<option value="heroic-fantasy">Heroic-fantasy</option>
+				<option value="heroes">Heroes</option>
+				<option value="saga">Saga intergalactique</option>
+			</select>
+			<br />
+				<input class="inputClass" type="submit" value="Validez"/>
+    </form>
+	<p>I'm Arnaud Baleh, an AI Developer</p>
+  </div>
+</div>
+<p>PHOTOGRAPHY BY STEPHEN KENT JOHNSON; WALLPAPER FROM THE JOHN DERIAN PICTURE BOOK</p>
+</body>
+</html>
