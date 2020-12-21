@@ -8,4 +8,4 @@ The model is stored in mongoDB, you need to install Pymongo and a create a datab
 
 Some results:
 ![](resultI.PNG)
-![]resultPrincess.PNG)
+![](resultPrincess.PNG)
