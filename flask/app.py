@@ -28,7 +28,7 @@ app = Flask(__name__)
 #json = FlaskJSON(app)
 #api = Api(app)  # type: Api
 app.config['UPLOAD_FOLDER'] = 'static/result'
-app.config['DATA_DIR'] = '/Users/arnaud.baleh/Desktop/dataIA/projetFilRouge/E1_projetFilRougeDl/flask/static/'
+app.config['DATA_DIR'] = '/Users/arnaud.baleh/Desktop/******/******/*******/flask/static/'
 
 @app.after_request
 def add_header(response):
@@ -66,7 +66,7 @@ def handleThemePicture():
             # plot raw pixel data
             pyplot.imshow(examples[i, :, :])
         #pyplot.show()
-        plt.pyplot.imsave("/Users/arnaud.baleh/Desktop/dataIA/projetFilRouge/E1_projetFilRougeDl/flask/static/result/imageFantasy.png",examples[n])
+        plt.pyplot.imsave("/Users/*******/*****/*****/projetFilRouge/E1_projetFilRougeDl/flask/static/result/imageFantasy.png",examples[n])
     
     debut = time.time()
     
