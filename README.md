@@ -5,7 +5,7 @@ After dowloaded folders, you can launch the web app (Flask) by "python app.py" i
 The model is stored in mongoDB, you need to install Pymongo and a create a database...
 
 ![](interface.PNG)
-
+PHOTOGRAPHY BY STEPHEN KENT JOHNSON; WALLPAPER FROM THE JOHN DERIAN PICTURE BOOK
 Some results:
 ![](resultI.PNG)
 ![](resultPrincess.PNG)
