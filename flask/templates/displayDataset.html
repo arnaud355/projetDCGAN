@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Affichage</title>
+</head>
+<body onload="GFG_Fun()">
+	<a href="http://127.0.0.1:5000/" class="inputClass">Accueil</a>
+		<p id = "GFG_UP" style = 
+            "font-size: 15px; font-weight: bold;"> 
+    </p> 
+      
+    <!--<button onclick = "GFG_Fun()"> 
+        click here 
+    </button> -->
+      
+    <p id="GFG_DOWN" style="color:green; font-size: 20px; font-weight: bold;"> 
+    </p> 
+	
+	<div class="centre">
+				<form action="/handleImage" method="post">
+					<input  type="text" name="themeChoix" value="Nombre d'images: {{ nb }}" readonly />
+					
+				</form>
+	</div>
+	
+			
+    <div id="divImg">
+	
+	</div>
+{% block javascript %}
+  <script> 
+		
+	
+		
+        var up = document.getElementById('GFG_UP'); 
+      
+        var down = document.getElementById('GFG_DOWN'); 
+		
+
+        function GFG_Fun() {
+			var nb = "{{ nb }}"
+			nb = Number(nb)
+			var tableau = "{{tab}}"
+			console.log(tableau)
+			var imgString = tableau.toString();
+			console.log(imgString)
+			var imgDecoupe = imgString.split(",");
+			
+			longeur = 0
+			decoupDebut = 6
+			decoupFin = 5
+			lastIndex = 0
+			
+			for(var i in imgDecoupe){
+				longeur = imgDecoupe[i].length
+				decoupFin = longeur - decoupFin
+				imgDecoupe[i] = imgDecoupe[i].substring(decoupDebut,decoupFin)
+				decoupFin = 5
+				lastIndex = i
+			}
+			
+			imgDecoupe[lastIndex] = imgDecoupe[lastIndex].substring(0,imgDecoupe[lastIndex].length - 1)
+			
+			var img;
+			for(var j = 0;j < nb;j++){
+				img = document.createElement('img');
+				img.src = 'static/tmp/' + imgDecoupe[j] + '.png';
+				img.class = 'imgDataset'
+				document.getElementById('divImg').appendChild(img);
+
+			}
+           
+            down.innerHTML = "Images du dataset"; 
+        } 
+    </script> 
+{% endblock %}
+
+</body>
+</html>
