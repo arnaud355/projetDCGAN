@@ -29,4 +29,28 @@
 </div>
 <p>PHOTOGRAPHY BY STEPHEN KENT JOHNSON; WALLPAPER FROM THE JOHN DERIAN PICTURE BOOK</p>
 </body>
+	<form action="/handleImage" method="post">
+            <label style="font-size:20px" for="theme-select">Afficher images du dataset:</label><br />
+
+			<select name="choix" id="picture-select">
+				<option value="">Choisissez le thème</option>
+				<option value="file">Cartoon</option>
+				<option value="VideoGamingCharacters">Video gaming</option>
+				<option value="heroic-fantasy">Heroic-fantasy</option>
+				<option value="super-heroes">Heroes</option>
+				<option value="sagaIntergalactique">Saga intergalactique</option>
+			</select>
+			<br />
+			<select name="nombre" id="picture-select">
+				<option value="">Combien d'images à selectionner</option>
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="100">100</option>
+				<option value="200">200</option>
+				<option value="500">500</option>
+				<option value="1000">1000</option>
+				
+			</select>
+				<input class="inputClass" type="submit" value="Validez"/>
+    </form>
 </html>
